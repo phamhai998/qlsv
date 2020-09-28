@@ -1,4 +1,3 @@
-<h1>Database</h1>
 <?php
 
 class Database 
@@ -24,12 +23,11 @@ class Database
                 array_push($data,$row);
             }
         }
-        echo '<pre>';
-        print_r($data);
-        echo '</pre>';
+        return $data;
     }
     public function getID($id)
     {
+        // lay sinh vien theo id
         global $connect;
         $this->connect();
         $sql = "SELECT * FROM `tv_sinhvien` WHERE sv_id = ${id}";

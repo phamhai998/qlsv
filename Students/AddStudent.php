@@ -1,4 +1,3 @@
-<h1>Add</h1>
 <?php
  
 require '../Database/Database.php';
